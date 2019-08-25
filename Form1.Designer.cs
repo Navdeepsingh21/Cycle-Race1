@@ -38,9 +38,9 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.nick_radio = new System.Windows.Forms.RadioButton();
+            this.nicolas_radio = new System.Windows.Forms.RadioButton();
+            this.creamie_radio = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.player1Bet = new System.Windows.Forms.Label();
             this.player2Bet = new System.Windows.Forms.Label();
@@ -150,41 +150,41 @@
             this.pictureBox8.TabIndex = 8;
             this.pictureBox8.TabStop = false;
             // 
-            // radioButton1
+            // nick_radio
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 390);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
+            this.nick_radio.AutoSize = true;
+            this.nick_radio.Location = new System.Drawing.Point(13, 390);
+            this.nick_radio.Name = "nick_radio";
+            this.nick_radio.Size = new System.Drawing.Size(47, 17);
+            this.nick_radio.TabIndex = 9;
+            this.nick_radio.TabStop = true;
+            this.nick_radio.Text = "Nick";
+            this.nick_radio.UseVisualStyleBackColor = true;
+            this.nick_radio.CheckedChanged += new System.EventHandler(this.NickRadio_CheckedChanged);
             // 
-            // radioButton2
+            // nicolas_radio
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(13, 413);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 10;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.RadioButton2_CheckedChanged);
+            this.nicolas_radio.AutoSize = true;
+            this.nicolas_radio.Location = new System.Drawing.Point(13, 413);
+            this.nicolas_radio.Name = "nicolas_radio";
+            this.nicolas_radio.Size = new System.Drawing.Size(60, 17);
+            this.nicolas_radio.TabIndex = 10;
+            this.nicolas_radio.TabStop = true;
+            this.nicolas_radio.Text = "Nicolas";
+            this.nicolas_radio.UseVisualStyleBackColor = true;
+            this.nicolas_radio.CheckedChanged += new System.EventHandler(this.NicolasRadio_CheckedChanged);
             // 
-            // radioButton3
+            // creamie_radio
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(13, 437);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 11;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.RadioButton3_CheckedChanged);
+            this.creamie_radio.AutoSize = true;
+            this.creamie_radio.Location = new System.Drawing.Point(13, 437);
+            this.creamie_radio.Name = "creamie_radio";
+            this.creamie_radio.Size = new System.Drawing.Size(63, 17);
+            this.creamie_radio.TabIndex = 11;
+            this.creamie_radio.TabStop = true;
+            this.creamie_radio.Text = "Creamie";
+            this.creamie_radio.UseVisualStyleBackColor = true;
+            this.creamie_radio.CheckedChanged += new System.EventHandler(this.CreaamieRadio_CheckedChanged);
             // 
             // label1
             // 
@@ -192,9 +192,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 361);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 20);
+            this.label1.Size = new System.Drawing.Size(135, 20);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Minimum bet $15";
+            this.label1.Text = "Minimum bet $0";
             // 
             // player1Bet
             // 
@@ -254,19 +254,9 @@
             0,
             0,
             0});
-            this.bettingAmount.Minimum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
             this.bettingAmount.Name = "bettingAmount";
             this.bettingAmount.Size = new System.Drawing.Size(120, 20);
             this.bettingAmount.TabIndex = 18;
-            this.bettingAmount.Value = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
             // 
             // label7
             // 
@@ -328,9 +318,9 @@
             this.Controls.Add(this.player2Bet);
             this.Controls.Add(this.player1Bet);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.creamie_radio);
+            this.Controls.Add(this.nicolas_radio);
+            this.Controls.Add(this.nick_radio);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -367,9 +357,9 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton nick_radio;
+        private System.Windows.Forms.RadioButton nicolas_radio;
+        private System.Windows.Forms.RadioButton creamie_radio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label player1Bet;
         private System.Windows.Forms.Label player2Bet;

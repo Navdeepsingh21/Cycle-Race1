@@ -9,7 +9,7 @@ namespace Cycle_Race
     public class Bet
     {
         public int amount { get; set; }
-        private int winningMultiplier = 4;          // This value holds the value for how much does player win (e.g. Bet Placed = 40$ so the winning will be 40 * winning multipler = 160)
+        private int winningMultiplier = 2;          // This value holds the value for how much does player win( money wil double)
         public string cyclist { get; set; }
         public BetPlacer betPlacer = new BetPlacer();
 
